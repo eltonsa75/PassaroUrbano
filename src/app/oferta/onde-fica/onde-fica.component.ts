@@ -21,16 +21,14 @@ export class OndeFicaComponent implements OnInit {
 
   ngOnInit() {
 
-    this.route.params.subscribe((parametros: Params) => {
+    // Criando o subscribe para atualizar as Abas Como usar / como criar
+    this.route.parent.params.subscribe((parametros: Params) => {
 
       this.ofertasService.getOndeFicaOfertaPorId(parametros.id)
       .then((descricao: string) => {
         this.ondeFica = descricao
       })
-
     })
-
-   
   }
 
 }

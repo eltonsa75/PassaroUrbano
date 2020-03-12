@@ -59,4 +59,11 @@ Configurar o pacote em polyfills.ts
 import 'intl'
 import 'intl/locale-data/jsonp/pt-Br';
 
+===================================================================================================
+
+foi feito um substituição do tether para popper.js
+
+=====================================================================================================
+
+
 
