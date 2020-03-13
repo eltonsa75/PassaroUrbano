@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { OfertaComponent } from './oferta/oferta.component';
+import { OrdemCompraComponent } from './ordem-compra/ordem-compra.component';
 
 
 const routes: Routes = [
@@ -14,13 +15,15 @@ const routes: Routes = [
 { path: 'diversao', component: DiversaoComponent},
 { path: 'oferta', component: OfertaComponent},
 
+// Rotas Filhas
 { path: 'oferta/:id', component: OfertaComponent,
   children: [
     { path: '', component: ComoUsarComponent},
     { path: 'como-usar', component: ComoUsarComponent},
     { path: 'onde-fica', component: OndeFicaComponent}
   ]
-}
+},
+{ path: 'ordem-compra', component: OrdemCompraComponent}
 ];
 
 @NgModule({
