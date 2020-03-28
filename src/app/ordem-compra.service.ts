@@ -11,7 +11,7 @@ export class OrdemCompraSerrvice {
 
     constructor(private http: HttpClient){}
 
-    public efetivarCompra(pedido : Pedido): Observable<any> {
+    public efetivarCompra(pedido : Pedido): Observable<number> {
 
        // Requisição em Post
         let headers: HttpHeaders = new HttpHeaders()
@@ -22,6 +22,6 @@ export class OrdemCompraSerrvice {
             (pedido),
             ({headers: headers})
         )
-        .map((resposta: Response) => console.log(resposta))
+        .map((resposta: Response) => resposta.id)
     }
 }
