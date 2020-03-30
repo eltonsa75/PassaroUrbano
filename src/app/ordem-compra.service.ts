@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { URL_API } from './app.api';
 
 @Injectable()
-export class OrdemCompraSerrvice {
+export class OrdemCompraService {
 
     constructor(private http: HttpClient){}
 
@@ -22,6 +22,6 @@ export class OrdemCompraSerrvice {
             (pedido),
             ({headers: headers})
         )
-        .map((resposta: Response) => resposta.id)
+        .map((resposta: any) => resposta.id)
     }
 }
