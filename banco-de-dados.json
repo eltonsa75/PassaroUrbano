@@ -213,6 +213,48 @@
       "complemento": "Casa X",
       "formaPagamento": "debito",
       "id": 4
+    },
+    {
+      "endereco": "Rua teste",
+      "numero": "10",
+      "complemento": "Casa B",
+      "formaPagamento": "dinheiro",
+      "id": 5
+    },
+    {
+      "endereco": "Rua Teste",
+      "numero": "10",
+      "complemento": "Casa B",
+      "formaPagamento": "dinheiro",
+      "id": 6
+    },
+    {
+      "endereco": "Rua teste",
+      "numero": "10",
+      "complemento": "Casa B",
+      "formaPagamento": "dinheiro",
+      "id": 7
+    },
+    {
+      "endereco": "Rua teste ",
+      "numero": "10",
+      "complemento": "Casa B",
+      "formaPagamento": "dinheiro",
+      "id": 8
+    },
+    {
+      "endereco": "Rua Teste",
+      "numero": "11",
+      "complemento": "Casa c",
+      "formaPagamento": "dinheiro",
+      "id": 9
+    },
+    {
+      "endereco": "Rua Teste",
+      "numero": "12",
+      "complemento": "Casa D",
+      "formaPagamento": "dinheiro",
+      "id": 10
     }
   ]
 }
