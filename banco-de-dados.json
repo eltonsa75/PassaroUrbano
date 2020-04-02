@@ -255,6 +255,13 @@
       "complemento": "Casa D",
       "formaPagamento": "dinheiro",
       "id": 10
+    },
+    {
+      "endereco": "Rua das Flores",
+      "numero": "155",
+      "complemento": "Casa 02",
+      "formaPagamento": "dinheiro",
+      "id": 11
     }
   ]
 }
