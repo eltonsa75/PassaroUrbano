@@ -11,7 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 //pipe
 import { DescricaoReduzida } from './util/descricao-reduzida.pipe';
 
-
+import { CarrinhoService } from './carrinho.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -53,7 +53,7 @@ registerLocaleData(localePt);
     //FormsModule
     ReactiveFormsModule,
   ],
-  providers: [ { provide: LOCALE_ID, useValue: 'pt-Br'}],
+  providers: [ CarrinhoService, { provide: LOCALE_ID, useValue: 'pt-Br'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
