@@ -28,7 +28,6 @@ export class OfertaComponent implements OnInit, OnDestroy {
   ngOnInit() {
     // Atualizar a rota a partir da pesquisa
     this.route.params.subscribe((parametros: Params) => {
-
     this.ofertaService.getOfertaPorId(parametros.id)
       .then((oferta: Oferta) => {
         this.oferta = oferta

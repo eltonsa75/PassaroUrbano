@@ -9,7 +9,7 @@ class CarrinhoService {
     }
 
     public incluirItem(oferta: Oferta): void {
-       let itemCarrinho: ItemCarrinho  = new ItemCarrinho(
+       let itemCarrinho: ItemCarrinho = new ItemCarrinho(
            oferta.id,
            oferta.imagens[0],
            oferta.titulo,
@@ -20,7 +20,6 @@ class CarrinhoService {
 
        //verificar se o item em questão já não existe dentro de this.itens        
        let itemCarrinhoEncontrado = this.itens.find((item: ItemCarrinho) => item.id === itemCarrinho.id)
-
        if(itemCarrinhoEncontrado) {
         itemCarrinhoEncontrado.quantidade += 1
        } else {
@@ -29,22 +28,16 @@ class CarrinhoService {
     }
 
     public totalCarrinhoCompras(): number {
-
         let total: number = 0
-
         this.itens.map((item: ItemCarrinho) => {
             total = total + (item.valor * item.quantidade)
         })
-
         return total
     }
 
-
-    public adicionarQuantidade(itemCarrinho: ItemCarrinho): void {
-       
+    public adicionarQuantidade(itemCarrinho: ItemCarrinho): void {       
         //incrementar quantidade
         let itemCarrinhoEncontrado = this.itens.find((item: ItemCarrinho) => item.id === itemCarrinho.id)
-
         if(itemCarrinhoEncontrado){
             itemCarrinhoEncontrado.quantidade += 1
         }
@@ -52,7 +45,6 @@ class CarrinhoService {
 
 
     public diminuirQuantidade(itemCarrinho: ItemCarrinho): void {
-
         //Decrementar quantidade
         let itemCarrinhoEncontrado = this.itens.find((item: ItemCarrinho) => item.id === itemCarrinho.id)
 
